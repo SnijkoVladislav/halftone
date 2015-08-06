@@ -1,0 +1,12 @@
+-var ng = true;
+
+include ../../components/components.jade
+
+.h-about
+
+	.l-about-header
+		+b-page-header("About", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, lectus at ullamcorper faucibus, tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, lectus at ullamcorper faucibus, tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+
+	.l-about-team
+		+b-post-gallery_workman-personal-info("aboutTeam")
+			+b-post-workman-personal-info(ng)

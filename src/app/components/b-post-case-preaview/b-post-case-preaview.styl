@@ -1,0 +1,84 @@
+b-post-case-preaview(ng)
+	if ng
+		.h-img-and-link
+			height 200px
+			overflow hidden
+			position relative
+			border-bottom 5px #0881a7 solid
+			margin-bottom 11px
+			&:hover
+				.h-link-bottom
+					transform translate(0px, 0px)
+
+		.h-link-bottom
+			position absolute
+			height 100%
+			width 100%
+			background-color rgba(11, 177, 229, 0.1)
+			transition transform 0.25s linear
+			transform translate(0px, -100%)
+
+		.b-post-case-preaview
+			&__button
+				align()
+			&__img
+				display block
+				height 100%
+			&__title
+				display block
+				color #353535
+				text-decoration none
+				font-weight 600
+				padding-bottom 11px
+				font-size 18px
+				line-height 1.3em
+				&:hover
+					color #0bb1e5
+			&__text
+				padding 0px
+				line-height 1.5em
+				margin 0px
+
+		.b-button
+			display inline-block
+			margin 0px 10px
+			height 50px
+			width 50px
+			background-color #0bb1e5
+			border 3px #0881a7 solid
+			border-radius 50%
+			text-align center
+			color #fff
+			cursor pointer
+			&:hover
+				color #0881a7
+			&:before
+				content ''
+				display table
+				height 38%
+	else
+		.h-img-and-link
+			height 200px
+			overflow hidden
+			position relative
+			border-bottom 5px #0881a7 solid
+			margin-bottom 11px
+
+		.b-post-case-preaview
+			&__img
+				display block
+				height 100%
+			&__title
+				display block
+				color #353535
+				text-decoration none
+				font-weight 600
+				padding-bottom 11px
+				font-size 18px
+				line-height 1.3em
+				&:hover
+					color #0bb1e5
+			&__text
+				padding 0px
+				line-height 1.5em
+				margin 0px

@@ -1,0 +1,9 @@
+mixin b-slider(ctrl, ass, data, at, var1, var2, var3)
+	.b-slider(slider-directive ng-controller="#{ctrl} as #{ass}")
+		.b-slider__item
+			.b-slide._txt-a_c(ng-repeat="#{at} in #{ass}.#{data}" )
+				img.b-slide__img(ng-src="./../../../../assets/images/slider/slide_img/slider-{{#{at}.#{var1}}}.jpg")
+				p.b-slide__text {{#{at}.#{var2}}}
+		.b-slider__controller._pull-c
+			span.b-arrow._next._pull-r(ng-click="next()")
+			span.b-arrow._prev._pull-l(ng-click="prev()")

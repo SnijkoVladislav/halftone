@@ -1,0 +1,5 @@
+mixin b-post-our-work(img, text)
+	.b-post-our-work
+		img.b-post-our-work__img(ng-src="./../../../../assets/images/our-work/gal-{{ item.#{img} }}.jpg")
+		span.b-post-our-work__text {{ item.#{text} }}
+		block

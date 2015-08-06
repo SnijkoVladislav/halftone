@@ -1,0 +1,61 @@
+.h-home
+	center(1200px, 25px)
+	padding 20px 0px
+	background-color #FFF
+	cf()
+
+.l-home-slider
+	@extend $_full-width
+	b-slider-main()
+
+.l-home-feature
+	padding 10px 20px
+	@extend $_full-width
+	background-color #fff
+	cf()
+	&__item
+		@extend $_1in3_gutter3
+		b-post-feature()
+		+below(840px)
+			width 100%
+
+
+.l-home-case
+	padding 0px 20px
+	background-color #FFF
+	padding-right 20px
+	@extend $_3in5
+	+below(840px)
+		width 100%
+	&__title
+		b-title_preview-post()
+	&__item
+		@extend $_1in2_gutter3
+		b-post-case-preaview(ng = false)
+
+.l-home-testimonials
+	padding 0px 20px
+	@extend $_2in5
+	background-color #FFF
+	+below(840px)
+		width 100%
+	&__title
+		b-title_preview-post()
+	&__item
+		b-slider-testimonials()
+
+.l-home-recent-news
+	padding 0px 20px
+	@extend $_full-width
+	&__title
+		b-title_preview-post()
+	&__item
+		@extend $_1in3_gutter3
+		b-blog-post-preaview()
+		+below(840px)
+			width 100%
+
+.l-home-attention
+	padding 0px 20px
+	@extend $_full-width
+	b-attention()

@@ -1,0 +1,12 @@
+include ../../components/components.jade
+
+- var bPostCasePreaview_settings = "angular";
+- var galleryPost_casePosts_settings = "alert article";
+.h-cases
+
+	.l-cases-header
+		+b-page-header("Cases", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, lectus at ullamcorper faucibus, tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, lectus at ullamcorper faucibus, tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+
+	.l-cases-case-posts
+		+b-gallery-post_case-posts("casePosts", galleryPost_casePosts_settings)
+			+b-post-case-preaview(bPostCasePreaview_settings, "casePosts")

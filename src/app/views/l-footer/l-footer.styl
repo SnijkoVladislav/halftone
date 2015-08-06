@@ -1,0 +1,52 @@
+.h-footer-middle
+	center(1200px, 25px)
+	box-sizing border-box
+	padding 25px 20px 15px
+	background-color #333538
+	cf()
+
+.l-footer-about
+	@extend $_1in4
+	b-about()
+	padding 0px 0px 0px 20px
+	+below(840px)
+		width 50%
+	+below(620px)
+		width 100%
+
+.l-footer-latest-tweets
+	@extend $_1in4
+	padding 0px 0px 0px 20px
+	b-latest-tweets()
+	+below(840px)
+		width 50%
+	+below(620px)
+		width 100%
+
+.l-footer-recent-news
+	@extend $_1in4
+	padding 0px 0px 0px 20px
+	b-recent-news()
+	+below(840px)
+		width 50%
+	+below(620px)
+		width 100%
+
+.l-footer-quick-faq
+	@extend $_1in4
+	padding 0px 0px 0px 20px
+	b-quick-faq()
+	+below(840px)
+		width 50%
+	+below(620px)
+		width 100%
+
+.h-footer-bottom
+	center(1200px, 25px)
+	box-sizing border-box
+	background-color #333
+	padding 10px 20px
+
+.l-footer-copywrite
+	@extend $_pull-l
+	b-copywrite()
