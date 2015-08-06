@@ -1,13 +1,13 @@
 mixin b-post-workman-personal-info(ng, img, name, rang, desc)
 	if ng
 		.b-workman-personal-info
-			img.b-workman-personal-info__img(ng-src="./../../../../assets/images/workman/team-{{ item.img }}.jpg")
+			img.b-workman-personal-info__img(ng-src="assets/images/workman/team-{{ item.img }}.jpg")
 			h3.b-workman-personal-info__name {{ item.name }}
 			span.b-workman-personal-info__rang {{ item.rang }}
 			p.b-workman-personal-info__desc {{ item.desc }}
 	else
 		.b-workman-personal-info
-			img.b-workman-personal-info__img(src="./../../../../assets/images/workman/team-#{img}.jpg")
+			img.b-workman-personal-info__img(src="assets/images/workman/team-#{img}.jpg")
 			h3.b-workman-personal-info__name #{name}
 			span.b-workman-personal-info__rang #{rang}
 			p.b-workman-personal-info__desc #{desc}

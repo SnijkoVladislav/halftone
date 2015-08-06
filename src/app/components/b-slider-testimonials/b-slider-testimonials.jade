@@ -4,7 +4,7 @@ mixin b-slider-testimonials(ctrl, data, text, pic, name, profession)
 			.b-testimonials-post(ng-repeat="item in #{ctrl}.#{data}")
 				p.b-testimonials-post__text "{{ item.#{text} }}"
 					.h-author
-						img.b-testimonials-post__pic(ng-src="./../../../../assets/images/testimonial/testimonial-{{ item.#{pic} }}.jpg")
+						img.b-testimonials-post__pic(ng-src="assets/images/testimonial/testimonial-{{ item.#{pic} }}.jpg")
 						h6.b-testimonials-post__name {{ item.#{name} }}
 						span.b-testimonials-post__profession {{ item.#{profession} }}
 		.b-slider-testimonials__controls

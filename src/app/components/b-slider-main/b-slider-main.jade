@@ -2,7 +2,7 @@ mixin b-slider-main(ctrl, slideData, img, desc)
 	.b-slider-main(slider-main-dir ng-controller="#{ctrl}Ctrl as #{ctrl}")
 		.b-slider-main__item
 			.b-slide(ng-repeat="item in #{ctrl}.#{slideData}" )
-				img.b-slide__img(ng-src="./../../../../assets/images/slider/slide_img/slider-{{ item.#{img} }}.jpg")
+				img.b-slide__img(ng-src="assets/images/slider/slide_img/slider-{{ item.#{img} }}.jpg")
 				p.b-slide__text {{item.#{desc}}}
 		.b-slider-main__controller
 			span.b-arrow._next(ng-click="next()")

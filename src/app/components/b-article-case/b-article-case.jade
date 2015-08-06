@@ -5,5 +5,5 @@ mixin b-article-case(ctrl)
 		)
 		.b-article
 			h2.b-article__title {{ #{ctrl}.galleryPostData[#{ctrl}.articleId].title }}
-			img.b-article__img(ng-src="./../../../../assets/images/cases/gal-{{ #{ctrl}.galleryPostData[#{ctrl}.articleShowId].img }}.jpg")
+			img.b-article__img(ng-src="assets/images/cases/gal-{{ #{ctrl}.galleryPostData[#{ctrl}.articleShowId].img }}.jpg")
 			p.b-article__text {{ #{ctrl}.galleryPostData[#{ctrl}.articleId].fullText }}
