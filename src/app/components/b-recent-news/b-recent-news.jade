@@ -1,7 +1,0 @@
-mixin b-recent-news()
-	.b-recent-news
-		h5.b-recent-news__title RECENT NEWS
-		ul.b-recent-news__list(ng-controller="recentNewsCtrl as news")
-			li.b-recent-news-post(ng-repeat="item in news.posts")
-				span.b-recent-news-post__date {{item.date}}
-				a.b-recent-news-post__link(ng-href="{{item.link}}") {{item.title}}

@@ -1,7 +1,0 @@
-mixin b-quick-faq()
-	.b-quick-faq
-		h5.b-quick-faq__title QUICK FAQ
-		ul.b-quick-faq__list(ng-controller="quickFaqCtrl as faq")
-			li.b-quick-faq-post(ng-repeat="item in faq.posts")
-				h6.b-quick-faq-post__title {{item.title}}
-				p.b-quick-faq-post__text {{item.text}}

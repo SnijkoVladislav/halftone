@@ -1,5 +1,0 @@
-mixin b-nav()
-	span.b-switcher(ng-click="navShow = !navShow" ng-init="navShow = true") +
-	ul.b-nav(ng-show="navShow" ng-controller="navCtrl as nav")
-		li.h-link(ng-repeat="item in nav.menuLink")
-			a.b-nav__item(ui-sref-active="active" ui-sref="{{nav.menuLink[$index]}}") {{nav.menuName[$index]}}
