@@ -1,9 +1,7 @@
 mixin b-article-case(ctrl)
-	.h-article(
-			ng-class="{'_active' : #{ctrl}.articleShow}"
-			ng-click="#{ctrl}.articleShow = false"
-		)
+	.h-article(ng-class="{'_active' : #{ctrl}.articleShow}")
 		.b-article
 			h2.b-article__title {{ #{ctrl}.galleryPostData[#{ctrl}.articleId].title }}
 			img.b-article__img(ng-src="assets/images/cases/gal-{{ #{ctrl}.galleryPostData[#{ctrl}.articleShowId].img }}.jpg")
 			p.b-article__text {{ #{ctrl}.galleryPostData[#{ctrl}.articleId].fullText }}
+			span.b-close(ng-click="#{ctrl}.articleShow = false") +

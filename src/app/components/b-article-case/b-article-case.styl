@@ -5,18 +5,16 @@ b-article-case()
 		bottom 0px
 		right 0px
 		left 0px
-		background-color rgba(183, 213, 251, 0.9)
+		background-color rgba(170, 200, 230, 0.6)
 		transform translate(100%, 0)
 		transition transform 0.25s linear
 		&._active
 			transform translate(0, 0)
-		&:hover
-			background-color rgba(170, 200, 230, 0.6)
 
 	.b-article
 		padding 20px
-		align()
 		background-color #FFF
+		align()
 		+below(840px)
 			width 90%
 		&__title
@@ -32,3 +30,16 @@ b-article-case()
 		&__text
 			line-height 1.5em
 			padding-bottom 11px
+
+	.b-close
+		display block
+		position absolute
+		right 10px
+		top 30px
+		font-size 50px
+		line-height 0
+		color #0bb1e5
+		cursor pointer
+		transition transform 0.25s linear
+		&:hover
+			transform rotate(90deg)

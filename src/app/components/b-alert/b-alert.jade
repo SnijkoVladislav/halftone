@@ -1,8 +1,5 @@
 mixin b-alert(ctrl)
-	.h-alert(
-			ng-class="{'_active' : #{ctrl}.alertShow}"
-			ng-click="#{ctrl}.alertShow = false"
-		)
+	.h-alert(ng-class="{'_active' : #{ctrl}.alertShow}")
 		.b-alert
 			img.b-alert__img(ng-src="assets/images/cases/gal-{{ #{ctrl}.alertShowidImg }}.jpg")
-
+			span.b-close(ng-click="#{ctrl}.alertShow = false") +
