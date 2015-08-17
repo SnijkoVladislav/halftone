@@ -8,6 +8,10 @@ $attentionLinkWidth = 30;
 		top 0px
 		bottom 0px
 		width ($attentionLinkWidth)%
+		+below(840px)
+			width 100%
+			padding 25px 0px
+			position relative
 
 	.b-attention
 		position relative
@@ -24,12 +28,16 @@ $attentionLinkWidth = 30;
 			font-weight 600
 			font-size 32px
 			line-height 1.3em
+			+below(840px)
+				width 100%
 		&__sub-text
 			display inline-block
 			width (100 - $attentionLinkWidth)%
 			margin 0 0 10px
 			padding-bottom 11px
 			line-height 1.5em
+			+below(840px)
+				width 100%
 		&__link
 			padding 10px 16px
 			background #0bb1e5

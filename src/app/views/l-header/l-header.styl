@@ -7,6 +7,9 @@
 .l-header-social
 	@extend $_pull-r
 	b-social()
+	+below(580px)
+		@extend $_pull-c
+		text-align center
 
 .h-header-middle
 	center(1200px, 25px)
